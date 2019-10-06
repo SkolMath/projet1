@@ -36,6 +36,8 @@ def lecture(recherche):
         for ligne in f:
             ligne=ligne.replace("\n","")
             annuaire.append(ligne)
+			
+		# par comprehension annuaire=[ ligne.replace("\n","")  for ligne in fichier ]
 
     # Recherche dans la liste le nom recherché à l'aide d'une boucle
     for i in range(len(annuaire)):
